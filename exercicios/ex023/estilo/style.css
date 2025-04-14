@@ -19,6 +19,13 @@ table {
     border-collapse: collapse;
     margin: auto;
 }
+caption {
+    font-size: 1.6em;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 10px;
+
+}
 td, th {
     border: 2px solid black;
     padding: 8px;
