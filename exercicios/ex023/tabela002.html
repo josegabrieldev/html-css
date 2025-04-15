@@ -10,9 +10,11 @@
         }
 
         table {
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
-            margin: auto;
+            padding: 20px;
+            margin: 30px;
+            position: relative;
         }
         caption {
             background-color: rgba(119, 136, 153, 0.308);
@@ -23,7 +25,7 @@
         }
 
         td, th {
-            border: 1.8px solid black;
+            border: 1px solid black;
             padding: 10px;
         }
         td.num {
@@ -31,11 +33,17 @@
         }
 
         thead, tfoot {
-            background-color: rgba(119, 136, 153, 0.637);
+            background-color: rgba(0, 0, 0, 0.486);
             color: white;
         }
         tbody > tr:nth-child(odd) {
             background-color: rgba(211, 211, 211, 0.603);
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+            color: white;
         }
     </style>
 </head>
