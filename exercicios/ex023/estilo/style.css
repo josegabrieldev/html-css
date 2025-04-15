@@ -24,7 +24,9 @@ caption {
     text-align: left;
     padding-left: 15px;
     padding-bottom: 10px;
-
+}
+tbody > tr:nth-child(odd) {
+    background-color: rgba(211, 211, 211, 0.849);
 }
 td, th {
     border: 2px solid black;
