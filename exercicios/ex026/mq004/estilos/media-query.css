@@ -24,7 +24,7 @@
     img#tv { display: none; }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* versão para tablet*/
+@media screen and (min-width: 601px) and (max-width: 992px) { /* versão para tablet*/
 
     body {
         background-image: url(../imagens/back-tablet.jpg);
