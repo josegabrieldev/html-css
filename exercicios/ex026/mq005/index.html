@@ -6,8 +6,9 @@
     <title>Menu Resposnsivo</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Portifólio Pessoal</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
@@ -35,6 +36,15 @@
     </main>
 
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                opcoes.style.display = 'block'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (opcoes.style.display == 'block') {
                 opcoes.style.display = 'none'
@@ -42,6 +52,7 @@
                 opcoes.style.display = 'block'
             }
         }
+
     </script>
 </body>
 </html>
