@@ -13,9 +13,11 @@
         }
 
         body {
+            display: flex;
+            flex-direction: column;
             width: 100vw;
             height: 100vh;
-            background-color: #0C1C26;
+            background-color: #254a61;
         }
 
         header {
@@ -25,7 +27,73 @@
         }
 
         header > h1 {
+            padding: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            max-width: 600px;
+            height: 100vh;
+            background-color: white;
+            margin: auto;
+            border-radius: 0px 0px 5px 5px;
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.342);
+        }
+
+        aside {
+            width: 120px;
+            background-color: #0C1C26;
+            text-align: center;
+            padding: 10px;
+        }
+
+        aside > a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 12px;
+        }
+
+        aside > a:hover {
+            color: #E6F28D;
+            text-decoration: underline
+        }
+
+        article {
+            flex-grow: 1;
             padding: 12px;
+        }
+
+        article > h2 {
+            color: #27521b;
+            padding: 15px;
+        }
+
+        article > p {
+            text-align: justify;
+            text-indent: 28px;
+        }
+
+        footer {
+            height: 40px;
+            background-color: #12181b;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        footer > p > a {
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            text-decoration: none;
+                }
+
+        footer > p > a:hover {
+            color: #74BF60;
+            font-size: 18px;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -35,23 +103,21 @@
         <p>Esta parte é o cabeçalho dessa página</p>
     </header>
 
-    <menu>
+    <main>
+        <aside>
         <a href="#">Home</a>
         <a href="#">Sobre</a>
         <a href="#">Contatos</a>
         <a href="#">Serviços</a>
         <a href="#">Ajuda</a>
-    </menu>
-
-    <main>
+        </aside>
+        
         <article>
             <h2>Primeiro Título de subnivel 2</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptatem aliquid nam at molestiae perspiciatis eius provident dolorem a? Atque vitae et velit ipsa quasi sapiente sunt mollitia cum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam quasi ipsum fuga temporibus quas! Nemo accusantium velit ab eveniet. Qui itaque eveniet officia, veniam impedit ducimus in voluptatum quibusdam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum ipsum eaque nihil similique labore qui, ex corporis quia assumenda, perferendis quidem impedit laudantium itaque? Quae maiores aspernatur doloremque. Est.</p>
-        </article>
-
-        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptatem aliquid nam at molestiae perspiciatis eius provident dolorem a? Atque vitae et velit ipsa quasi sapiente sunt mollitia cum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam quasi ipsum fuga temporibus quas! Nemo accusantium velit ab eveniet. Qui itaque eveniet officia, veniam impedit ducimus in voluptatum quibusdam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum ipsum eaque nihil similique labore qui, ex corporis quia assumenda, perferendis quidem impedit laudantium itaque? Quae maiores aspernatur doloremque. Est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore facere ex. Dolorum, amet omnis magni expedita doloribus nesciunt aut, atque tempore praesentium velit maiores, laudantium temporibus quam ipsa accusantium.</p>
             <h2>Segundo Título de subnivel 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reiciendis laudantium a omnis rem incidunt fugit, repudiandae quaerat magnam, voluptates laborum reprehenderit expedita quam suscipit quos. Recusandae consectetur temporibus non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque perferendis consectetur illo quis cum tempora soluta eius, pariatur, nam repellat deserunt saepe assumenda velit odit recusandae excepturi et quisquam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reiciendis laudantium a omnis rem incidunt fugit, repudiandae quaerat magnam, voluptates laborum reprehenderit expedita quam suscipit quos. Recusandae consectetur temporibus non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque perferendis consectetur illo quis cum tempora soluta eius, pariatur, nam repellat deserunt saepe assumenda velit odit recusandae excepturi et quisquam voluptates. Lorem ipsum dolor sit </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat est nesciunt ipsam recusandae impedit quas autem distinctio, itaque natus expedita cupiditate explicabo, iusto aperiam dolore rem magni aliquam? Cumque.</p>
         </article>
     </main>
 
