@@ -41,7 +41,7 @@ main p {
 
 section.flex-content {
     display: flex;
-    flex-flow: column ;
+    flex-flow: column nowrap;
 }
 
 section.flex-content  h2 {
@@ -50,16 +50,20 @@ section.flex-content  h2 {
 
 article.media-text {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
 }
 
-article.text-media {
-    display: flex;
-    flex-flow: column;
+article > div.text {
+    flex: 1 1 500px;
 }
 
-div.media {
-    padding: 15px 0px;
+article > div.media {
+    margin: auto;
+}
+
+div.media > img {
+    margin: 25px;
 }
 
 section.normal {
