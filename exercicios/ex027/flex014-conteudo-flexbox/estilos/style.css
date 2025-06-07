@@ -20,13 +20,15 @@ header {
 
 header > h1 {
     color: #15BFBF;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 main {
     background-color: white;
     padding: 20px;
     margin: 12px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.212);
 }
 
 main h2 {
@@ -62,8 +64,16 @@ article > div.media {
     margin: auto;
 }
 
+div.media {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
 div.media > img {
-    margin: 25px;
+    display: block;
+    max-width: 96%;
+    height: auto;
+    margin: 20px;
 }
 
 section.normal {
