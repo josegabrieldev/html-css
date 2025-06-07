@@ -28,7 +28,8 @@ header > h1 {
     flex: 0 0 400px;
 
     color: white;
-    border: 1px dotted black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    padding: 10px;
 }
 
 nav {
@@ -37,7 +38,6 @@ nav {
     justify-content: flex-start;
 
     padding: 10px;
-    border: 1px dotted black;
 }
 
 header > nav > a {
