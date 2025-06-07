@@ -15,18 +15,52 @@ body {
 }
 
 header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
     background-image: linear-gradient(to top, #4DBF3B, #47A638);
     padding: 12px;
 }
 
 header > h1 {
+    flex: 0 0 400px;
+
     color: white;
     border: 1px dotted black;
 }
 
 nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
     padding: 10px;
     border: 1px dotted black;
+}
+
+header > nav > a {
+    background-color: #275c1f;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+header > nav > a:hover {
+    background-color: #16260A;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+header > nav > a:focus {
+    background-color: #16260A;
+    font-weight: bold;
+    transition: all 0.4s ease;
 }
 
 main {
