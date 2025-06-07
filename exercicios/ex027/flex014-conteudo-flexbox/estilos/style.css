@@ -25,7 +25,7 @@ header > h1 {
 
 main {
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     margin: 12px;
 }
 
@@ -40,11 +40,22 @@ main p {
 }
 
 section.flex-content {
-    
+    display: flex;
+    flex-flow: column ;
 }
 
 section.flex-content  h2 {
     padding-bottom: 15px;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: column;
 }
 
 div.media {
