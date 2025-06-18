@@ -7,12 +7,14 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(26, 26, 99);
+    text-align: center;
     display: grid;
-    grid-template-rows: 100px 40px 500px 30px;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 40px 1fr 30px;
+    grid-template-columns: 3fr 1fr;
     gap: 7px;
-    margin: 30px;
 }
 
 header {
